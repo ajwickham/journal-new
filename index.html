@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>JournalStartAgain</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Journal</h1>
+    </div>
+   
+      <div class="row">
+      
+        <form id="new-entry">
+          <div class="form-group">
+            <div class="row">
+              <span class="pl-5">
+                <button type="submit" id="submit" class="btn">Submit</button></span>
+              <span class="pl-5">
+                <button type="button" id="new" class="btn">New</button></span>
+              <span class="pl-5">
+                <button type="button" id="first" class="btn">First/Next</button></span>
+              <span class="pl-5">
+                <button type="button" id="last" class="btn">Last/Previous</button></span>
+              <span class="pl-5">
+                <button type="button" id="delete" class="btn">Delete Entry Shown</button></span>  
+            </div>
+          </div> 
+          <div id = "entry-input">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title">
+            </div>
+            <div class="form-group">
+              <label for="body">Body</label>
+              <textarea class="form-control" rows = "10" id="body"></textarea>
+            </div>
+          </div>
+          <div id = "data" class = "show-content">
+            <h6>Title</h6>
+          </div>
+
+
+        </form> 
+      
+        
+      
+      </div> 
+    
+  </div>      
+</body>
+</html>
