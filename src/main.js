@@ -1,13 +1,16 @@
 
-import './css/styles.css';
 import Entry from './entry.js';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
 
 
 // UI or front end logic
 const game1 = new Entry;
 
 $(document).ready(function() {
-  let i = -1
+  let i = -1;
   document.getElementById("title").value = "";
   document.getElementById("body").value = "";
   //  attachContactListeners();
@@ -27,7 +30,7 @@ $(document).ready(function() {
   $("button#first").click(function() {
     i=i+1;
     if(i>(game1.titles.length-1)) {
-      i=0
+      i=0;
     }  
     document.getElementById("title").value = game1.titles[i];
     document.getElementById("body").value = game1.body[i];   
@@ -36,7 +39,7 @@ $(document).ready(function() {
   $("button#last").click(function() {
     i=i-1;
     if(i<0) {
-      i=(game1.titles.length-1)
+      i=(game1.titles.length-1);
     }
     document.getElementById("title").value = game1.titles[i];
     document.getElementById("body").value = game1.body[i];     
