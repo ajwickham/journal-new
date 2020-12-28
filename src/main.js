@@ -1,6 +1,10 @@
-import Entry from './Entry.js';
 
-    // UI or front end logic
+import './css/styles.css';
+import Entry from './entry.js';
+
+
+// UI or front end logic
+const game1 = new Entry;
 
 $(document).ready(function() {
   let i = -1
